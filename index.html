@@ -2,56 +2,63 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Encritador</title>
 </head>
 <body>
     <div class="container">
 
-        <div class="logo">
-                <img src="images/logo.png" alt="Logo de Alura">
-        </div>
-
-
-
-        <div class="container-contenido">
-            <div class="input-texto">
-                <textarea id="input" cols="30" rows="10" placeholder="Ingresa tu texto aqui"></textarea>
-            </div>
-
-
-
-            <div class="warn">
-                <p class="warn-char">&#9888 Solo letras minusculas y sin caracteres especiales</p>
-            </div>
-
-
-
-            <div class="botones">
-                <button id="boton-1">Encriptar</button>
-                <button id="boton-2">Desencriptar</button>
+        <div class="container-header">
+            <div class="logo">
+                    <img src="images/logo.png" alt="Logo de Alura">
             </div>
         </div>
 
 
-
-        <div class="container-panel">
-            <div class="panel">
-                <textarea id="output"></textarea>
-                <div id="sin-mensaje">
-                    <img src="images/Muneco.png" alt="Muñeco" id="muneco">
-                    <p class="mensaje-1">Ningún mensaje fue encontrado</p>
-                    <p class="mensaje-2">Ingresa el mensaje que desees encriptar o desencriptar</p>
+        <div class="container-main">
+            <div class="container-contenido">
+                <div class="input-texto">
+                    <textarea id="input" cols="30" rows="10" placeholder="Ingresa tu texto aqui"></textarea>
                 </div>
-                <button id="copiar">Copiar</button>
+
+
+                <div class="botonera">
+                    <div class="warn">
+                        <p class="warn-char">&#9888 Solo letras mayusculas y minusculas</p>
+                    </div>
+
+
+
+                    <div class="botones">
+                        <button id="boton-1">Encriptar</button>
+                        <button id="boton-2">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container-panel">
+                <div class="panel">
+                    <textarea id="output"></textarea>
+                    <div id="sin-mensaje">
+                        <img src="images/Muneco.png" alt="Muñeco" id="muneco">
+                        <p class="mensaje">Ningún mensaje fue encontrado</p>
+                        <p class="mensaje">Ingresa el mensaje que desees encriptar o desencriptar</p>
+                    </div>
+                    <button id="copiar">Copiar</button>
+                </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>
